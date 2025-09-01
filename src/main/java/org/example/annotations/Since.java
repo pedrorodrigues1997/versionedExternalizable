@@ -9,7 +9,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface SerializeWith {
-    Class<? extends FieldAdapter<?>> value();
-    Class<?> elementType() default Void.class;
+public @interface Since {
+    int value();
 }
